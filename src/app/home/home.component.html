@@ -1,0 +1,8 @@
+<h1>Data component</h1>
+<li *ngFor="let d of homeData; let i=index">
+
+    {{i+1}}  {{d.lang}}--{{d.dur}}
+    <button (click)="recivedData(d)">button</button>
+</li>
+
+<button (click)="getInfo()">Hey Click Me</button>

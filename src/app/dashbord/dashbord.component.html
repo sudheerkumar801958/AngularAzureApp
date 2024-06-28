@@ -1,0 +1,17 @@
+<h4>This is from DashBord Component</h4>
+
+<div>
+    <table border="1">
+         <tr> 
+            <th>Id</th>
+            <th>Dept</th> 
+            <th>Count</th> 
+            <th>Button</th>
+        </tr>
+        <tr *ngFor="let info of dashbordNames; let i = index"> 
+            <td>{{i+1}}</td> <td>{{info.dept}}</td> 
+            <td>{{info.count}}</td> 
+            <td> <button (click)="gotData(info)">Click</button> </td> 
+        </tr>
+    </table>
+</div>

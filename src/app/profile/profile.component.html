@@ -1,0 +1,16 @@
+<h2>This is from Profie Component</h2>
+<div *ngFor="let n of names">
+   
+    {{n.name}}
+ 
+</div>
+
+<div>
+    <ul>
+        <li *ngFor="let m of names ; let i=index">
+            {{i+1}}  {{m.name}}-{{m.deg}}
+            <button (click)="getData(m)">Click</button>
+        </li>
+    </ul>
+</div>
+<button (click)="clickMe()">Button</button>

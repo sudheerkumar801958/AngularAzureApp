@@ -1,0 +1,8 @@
+<div>
+    <button (click)="getTestData()">Submit</button>
+</div>
+<ul *ngFor="let y of testData; let i=index">
+   {{i+1}}  {{y.user}}--{{y.id}}
+   <button (click)="sendTestData(y)"
+   >Click</button>
+</ul>
